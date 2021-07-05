@@ -19,7 +19,7 @@ export const get = async (req, res, next) => {
   if (!req.headers.email || !validator.isEmail(req.headers.email)) {
     next(
       appError(
-        `${ReasonPhrases.UNPROCESSABLE_ENTITY}: header should contain a valid email`,
+        `${ReasonPhrases.UNPROCESSABLE_ENTITY}: header should contain a valid e-mail`,
         StatusCodes.UNPROCESSABLE_ENTITY,
       ),
     );
