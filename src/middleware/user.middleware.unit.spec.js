@@ -16,7 +16,9 @@ describe('Middleware > User', () => {
   });
 
   it('should forward an error when an e-mail is NOT provided in the headers', () => {
-    const req = buildReq({ headers: {} });
+    const req = buildReq({
+      headers: {},
+    });
     const next = buildNext();
 
     get(req, null, next);
