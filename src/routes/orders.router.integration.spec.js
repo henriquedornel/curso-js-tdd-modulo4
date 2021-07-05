@@ -20,7 +20,7 @@ describe('Router > Integration > Orders', () => {
     done(); // para testes assíncronos
   });
 
-  it('should return status 500 and an erro message when listOrder rejects', async done => {
+  it('should return status 500 and an error message when listOrder rejects', async done => {
     const error = buildError(
       StatusCodes.INTERNAL_SERVER_ERROR,
       'Failed to retrieve list of orders',
