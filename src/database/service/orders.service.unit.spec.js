@@ -52,10 +52,12 @@ describe('Service > Orders', () => {
 
   it('should save and return order', /* async */ () => {
     const user = buildUser();
+
     const data = {
       userid: user.id,
       products: buildOrder(),
     };
+
     const order = {
       ...data,
       id: 1,
