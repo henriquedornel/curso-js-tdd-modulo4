@@ -5,3 +5,5 @@ export default express
   .Router()
   .get('/', ordersController.index)
   .post('/', ordersController.validate('create'), ordersController.create);
+
+// api/order/
